@@ -2,13 +2,13 @@ let fs = require('fs')
 let chalk = require('chalk')
 
 owner = [
-  ['62895330379186'],
-  ['62895330379186'],
-  ['62895330379186', 'Owner', true]
+  ['6281277026506'],
+  ['6281277026506'],
+  ['6281277026506', 'Owner', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
-mods = [] // Want some help?
-prems = [] // Premium user has unlimited limit
+mods = [081277026506] // Want some help?
+prems = [081277026506] // Premium user has unlimited limit
 APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
@@ -40,8 +40,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '@ainee_bot'
-  var sticker_author = 'Aine'
+  var sticker_name = '@egi_bot'
+  var sticker_author = 'egi'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -56,7 +56,7 @@ fs.watchFile(file_exif, () => {
 })
 
 // Sticker WM
-packname = sticker_name
+packname = sticker_egi
 author = sticker_author
 wm = '© Aine'
 
